@@ -13,7 +13,6 @@ const TRAIN_URL='http://20.244.56.144/train/trains';
 router.post(API_URL,newTrain)
 router.post(AUTH_URL,authData)
 router.get(TRAIN_URL,authTrain)
-router.get('/train', traindetails)
 
 
 export default {router,AUTH_TOKEN}

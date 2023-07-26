@@ -44,24 +44,8 @@ const authTrain = {
   });
 
 
-
-
-const traindetails=asyncHandler(async(req,res)=>{
-    try {
-        const trains = await getTrainSchedules();
-        res.json(trains);
-      } catch (error) {
-        console.error('error', error.message);
-        res.status(500).json({ error: 'Server Error' });
-      }   
-})
-
-
-
 export{
     newTrain,
     authData,
     authTrain,
-    traindetails,
-    trainRegstraion
 }
