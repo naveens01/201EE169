@@ -10,7 +10,7 @@ const newTrain = {
   ownerEmail: 'naveens.ee20@bitsathy.ac.in',
   accessCode: 'VxeuTv'
 }.then((response) => {
-    console.log('Train registered successfully:', response.data);
+    console.log('registered successfully:', response.data);
 }).catch((error) => {
     console.error('Error in registering the train:', error.message);
 });
